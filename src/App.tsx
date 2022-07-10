@@ -4,7 +4,7 @@ import { Container, Header, Link, Logo } from './appStyle';
 import { Counter } from './components/Counter/Counter';
 import logo from './img/logo.svg';
 
-function App() {
+export const App: React.FC = () => {
   return (
     <Container>
       <Header>
@@ -50,6 +50,4 @@ function App() {
       </Header>
     </Container>
   );
-}
-
-export default App;
+};

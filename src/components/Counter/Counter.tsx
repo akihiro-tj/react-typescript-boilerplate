@@ -13,7 +13,7 @@ import {
 
 import { AsyncButton, Button, Row, Textbox, Value } from './counterStyle';
 
-export function Counter() {
+export const Counter: React.FC = () => {
   const count = useAppSelector(selectCount);
   const dispatch = useAppDispatch();
   const [incrementAmount, setIncrementAmount] = useState('2');
@@ -55,4 +55,4 @@ export function Counter() {
       </Row>
     </div>
   );
-}
+};
